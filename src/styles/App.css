@@ -1,0 +1,114 @@
+body {
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    color: rgb(27, 27, 27);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 80px;
+}
+
+.container {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    margin: 20px auto;
+}
+
+select,
+input,
+button {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #05104A;
+    color: whitesmoke;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background-color: #0a2091;
+}
+
+.resultado {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.flag {
+    width: 40px;
+    height: auto;
+}
+
+/* Estilos para a exibição das cotações */
+.cotacoes-container {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.cotacao-item {
+    border-bottom: 2px solid #05104A;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+span {
+    font-size: 1.2rem;
+}
+
+/* Estilo para o estado de loading */
+p {
+    font-size: 1.5rem;
+    color: #888;
+}
+
+/* Exemplo de spinner (pode ser customizado) */
+.loading-spinner {
+    display: flex;
+    margin: auto;
+    text-align: center;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #0a2091;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 600px) {
+    main {
+        padding-top: 130px;
+    }
+}
